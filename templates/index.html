@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a mi Portfolio, soy Eduardo Abaitua</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/projects">Proyectos</a></li>
+                <li><a href="/contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Sobre mí</h2>
+    <img src="{{ url_for('static', filename='images/WhatsApp Image 2025-03-24 at 22.38.26.jpeg') }}" 
+         alt="Foto de Eduardo Abaitua" 
+         style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 20px;">
+
+    <p>¡Hola! Soy Eduardo Abaitua, tengo 28 años y soy un programador junior con experiencia en desarrollo backend
+        utilizando Python y en el uso de frameworks como Flask y Django. Actualmente, estoy en constante aprendizaje
+        para mejorar mis habilidades como desarrollador web.
+    </p>
+    
+    <p>
+        Durante mi formación en Python, he trabajado en diversos proyectos y aprendido conceptos clave como:
+    </p>
+     
+      
+    <ul>
+        <li><strong>Fundamentos de Python:</strong> Sintaxis, variables, operadores y estructuras de control.</li>
+        <li><strong>Funciones y Módulos:</strong> Creación de funciones, importación de librerías.</li>
+        <li><strong>POO (Programación Orientada a Objetos):</strong> Clases, objetos y herencia.</li>
+        <li><strong>Manejo de Datos:</strong> Archivos (txt, csv, json) y bases de datos SQL.</li>
+        <li><strong>Desarrollo Práctico:</strong> Proyectos, automatización y frameworks (Flask/Django).</li>
+    </ul>
+    <p>
+        Estoy trabajando para mejorar mis habilidades en desarrollo web y seguir aprendiendo sobre nuevas tecnologías.
+        Mi objetivo es crear aplicaciones eficientes y escalables y contribuir a proyectos de código abierto.
+    </p>
+    <h3>Habilidades</h3>
+    <ul>
+        <li>Python</li>
+        <li>Flask</li>
+        <li>Django</li>
+        <li>HTML/CSS</li>
+        <li>JavaScript</li>
+        <li>Git/GitHub</li>
+        <li>SQL y bases de datos relacionales (SQLite, PostgreSQL)</li>
+        <li>Desarrollo web full-stack</li>
+    </ul>
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Si deseas ponerte en contacto conmigo, puedes usar los siguientes medios:</p>
+        <ul>
+            <li><strong>Correo Electrónico:</strong> <a href="mailto:edutenis@hotmail.com">edutenis@hotmail.com</a></li>
+            <li><strong>Teléfono:</strong> 660078912</li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/eduardo-abaitua-vázquez-115b4a336" target="_blank">Mi LinkedIn</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/Eabaitua" target="_blank">Eabaitua en GitHub</a></li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Eduardo Abaitua | Todos los derechos reservados.</p>
+    </footer>

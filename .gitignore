@@ -1,0 +1,34 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Virtual Environment
+venv/
+.env/
+
+# IDEs y editores
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Archivos de configuración y logs
+*.log
+*.sqlite3
+
+# Archivos de dependencias
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Archivos de prueba y cobertura
+.tox/
+.nox/
+.coverage
+htmlcov/
+*.cover
+
+# Archivos de despliegue
+*.egg-info/
+dist/
+build/
