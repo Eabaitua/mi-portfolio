@@ -1,44 +1,70 @@
 body {
+    background-image: url('https://url-de-tu-imagen.jpg'); /* Puedes usar una URL o una imagen local */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* La imagen no se moverá al hacer scroll */
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    color: white; /* Puedes cambiar el color del texto si lo prefieres */
 }
 
+/* Header */
 header {
-    background-color: #333;
-    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro transparente para que el texto sea legible */
     padding: 20px;
     text-align: center;
 }
 
-header nav ul {
+/* Título principal */
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #fff; /* Color del texto en blanco */
+}
+
+/* Estilo del navbar */
+nav ul {
     list-style-type: none;
     padding: 0;
 }
 
-header nav ul li {
+nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin-right: 15px;
 }
 
-header nav ul li a {
-    color: white;
+nav ul li a {
+    color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
+/* Imagen de perfil */
+img {
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+/* Sección de contenido */
 section {
-    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para la sección */
     padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+h2, h3 {
+    color: #fff;
+}
+
+p, ul {
+    color: #ccc; /* Texto más claro para mejorar la legibilidad */
 }
 
 footer {
-    background-color: #333;
-    color: white;
     text-align: center;
-    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
