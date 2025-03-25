@@ -83,7 +83,8 @@
     <script>
         // Función para desplazarse hacia abajo
         function scrollDown() {
-            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+            const contactSection = document.getElementById('contact');
+            window.scrollTo({ top: contactSection.offsetTop - 50, behavior: 'smooth' }); // Desplazar hasta la sección de contacto
         }
 
         // Función para minimizar/expandir la sección de contacto

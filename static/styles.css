@@ -15,6 +15,7 @@ body {
     color: white;
     position: relative;
     overflow: hidden;
+    min-height: 100vh; /* Esto asegura que el contenido ocupe al menos el 100% de la altura de la ventana */
 }
 
 /* Animación de estrellas de fondo (parallax en fondo de estrellas) */
@@ -140,13 +141,14 @@ button:hover {
 
 /* Sección de contacto oculta por defecto */
 #contact {
-    display: block; /* Inicialmente visible */
-    transition: all 0.3s ease;
+    max-height: 400px; /* Establecer un max-height para transiciones suaves */
+    overflow: hidden; /* Ocultar contenido fuera de max-height */
+    transition: max-height 0.3s ease;
 }
 
 /* Sección de contacto minimizada */
 #contact.hidden {
-    display: none; /* Se oculta la sección de contacto cuando se minimiza */
+    max-height: 0; /* Cuando se minimiza, reducimos la altura a 0 */
 }
 
 /* Footer estilizado */
@@ -155,9 +157,8 @@ footer {
     background-color: rgba(0, 0, 0, 0.9);
     color: #fff;
     padding: 20px 0;
-    position: fixed;
+    position: relative;
     width: 100%;
-    bottom: 0;
     box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s ease-in-out;
 }
