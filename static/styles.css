@@ -1,3 +1,10 @@
+html, body {
+    height: 100%; /* Hacer que ocupen toda la pantalla */
+    margin: 0; /* Eliminar márgenes predeterminados */
+    padding: 0; /* Eliminar el padding predeterminado */
+    overflow-x: hidden; /* Prevenir desplazamiento horizontal */
+}
+
 body {
     background-image: url('https://url-de-tu-imagen.jpg'), 
                       linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
