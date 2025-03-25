@@ -3,6 +3,7 @@ html, body {
     margin: 0; /* Eliminar márgenes predeterminados */
     padding: 0; /* Eliminar el padding predeterminado */
     overflow-x: hidden; /* Prevenir desplazamiento horizontal */
+    overflow-y: auto; /* Permitir desplazamiento vertical */
 }
 
 body {
@@ -14,8 +15,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     position: relative;
-    overflow: hidden;
-    min-height: 100vh; /* Esto asegura que el contenido ocupe al menos el 100% de la altura de la ventana */
+    min-height: 100vh; /* Asegura que el contenido ocupe toda la altura de la ventana */
 }
 
 /* Animación de estrellas de fondo (parallax en fondo de estrellas) */
@@ -139,16 +139,16 @@ button:hover {
     transform: scale(1.1); /* Aumenta ligeramente el tamaño del botón */
 }
 
-/* Sección de contacto oculta por defecto */
+/* Sección de contacto visible por defecto */
 #contact {
-    max-height: 400px; /* Establecer un max-height para transiciones suaves */
-    overflow: hidden; /* Ocultar contenido fuera de max-height */
-    transition: max-height 0.3s ease;
+    height: 400px; /* Fija una altura para la sección */
+    overflow: hidden; /* Oculta el contenido fuera de la altura establecida */
+    transition: height 0.3s ease; /* Suaviza la transición cuando cambia la altura */
 }
 
 /* Sección de contacto minimizada */
 #contact.hidden {
-    max-height: 0; /* Cuando se minimiza, reducimos la altura a 0 */
+    height: 0; /* Cuando se minimiza, reducimos la altura a 0 */
 }
 
 /* Footer estilizado */

@@ -64,7 +64,7 @@
     </section>
 
     <!-- Sección de contacto expandible -->
-    <section id="contact" class="collapsible">
+    <section id="contact">
         <h2>Contacto</h2>
         <p>Si deseas ponerte en contacto conmigo, puedes usar los siguientes medios:</p>
         <ul>
@@ -91,12 +91,12 @@
         function toggleContact() {
             var contactSection = document.getElementById('contact');
             var toggleButton = document.getElementById('toggle-contact');
-            if (contactSection.style.display === 'none') {
-                contactSection.style.display = 'block';
-                toggleButton.textContent = 'Minimizar';
-            } else {
-                contactSection.style.display = 'none';
+            // Alterna la visibilidad de la sección de contacto con una clase CSS
+            contactSection.classList.toggle('hidden');
+            if (contactSection.classList.contains('hidden')) {
                 toggleButton.textContent = 'Expandir';
+            } else {
+                toggleButton.textContent = 'Minimizar';
             }
         }
     </script>
